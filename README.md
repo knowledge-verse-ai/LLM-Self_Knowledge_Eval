@@ -9,6 +9,27 @@ As LLMs grow more powerful, their most profound achievement may be recognising w
 <p align=center><em>Overview of our methodology depicting key steps</em></p>
 
 
+## Experimentation Results
+
+The results of our experimentation are stored in the /results directory, and the dataset follows a specific format. Each entry in the dataset corresponds to a task both generated and classified as feasible/infeasible by the same LLM to assess its self-knowledge capabilities. The format is as follows:
+
+| ID | Task | LLM | Task Category (Generation) | Type of Self-Knowledge (Generation) | Reason for Incapacity (Generation) | Task Category (Classification) | Type of Self-Knowledge (Classification) | Reason for Incapacity (Classification) |
+|----|------|-----|----------------------------|------------------------------------|------------------------------------|--------------------------------|---------------------------------------|----------------------------------------|
+
+- **ID**: A unique identifier for each task.
+- **Task**: The task description or problem the LLM has generated.
+- **LLM**: The specific language model used for generating or classifying the task (e.g., GPT-4o, Mistral Large, etc.).
+- **Task Category (Generation)**: The categorization of the task under generation mode (e.g., feasible or infeasible).
+- **Type of Self-Knowledge (Generation)**: The type of self-knowledge utilized by the model during the generation process (e.g., capability boundaries, contextual awareness).
+- **Reason for Incapacity (Generation)**: The explanation for the model's inability to correctly answer or generate a response, if applicable.
+- **Task Category (Classification)**: The categorization of the task under classification mode (e.g., feasible or infeasible)
+- **Type of Self-Knowledge (Classification)**: The type of self-knowledge used in the classification process.
+- **Reason for Incapacity (Classification)**: The reason for the model's failure to classify the task accurately, if applicable.
+
+These results provide detailed insights into how different models respond to tasks that lie at or beyond their capacity. By analyzing these data points, we can identify patterns in model behaviour and their self-assessment of feasibility boundaries. The dataset allows for a comparison of various models’ performances and their consistency in judging their own capabilities, revealing areas of improvement and trustworthiness issues in LLM responses.
+
+
+
 ## Implementation Setup
 This codebase allows you to **generate** and **classify** both feasible and infeasible tasks using different AI models.  
 It provides two main commands:  
