@@ -4,7 +4,7 @@
 
 As LLMs grow more powerful, their most profound achievement may be recognising when to say "I don't know". Existing studies on LLM self-knowledge have been largely constrained by human-defined notions of feasibility, often neglecting the reasons behind unanswerability by LLMs and failing to study deficient types of self-knowledge. This study aims to obtain intrinsic insights into different types of LLM self-knowledge with a novel methodology: allowing them the flexibility to set their own feasibility boundaries and then analysing the consistency of these limits. We find that even frontier models like GPT-4o and Mistral Large cannot accurately judge their own capabilities more than 80\% of the time, highlighting a significant lack of trustworthiness in responses. Our analysis of confidence balance in LLMs indicates that models swing between overconfidence and conservatism in feasibility boundaries depending on task categories and that the most significant self-knowledge weaknesses lie in temporal awareness and contextual understanding. These difficulties in contextual comprehension additionally lead models to question their operational boundaries, resulting in considerable confusion within the self-knowledge of LLMs. 
 
-<p align=center><img width=800pt  src="https://github.com/user-attachments/assets/11777bfb-cc89-436d-b8bc-931590aaeb47"></p>
+<p align=center><img width=800pt  src="https://github.com/user-attachments/assets/52dc1cab-924f-4438-a024-2958db6fefd5"></p>
 <br>
 <p align=center><em>Overview of our methodology depicting key steps</em></p>
 
