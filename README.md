@@ -48,8 +48,14 @@ Ensure you have Python installed (version 3.10+ recommended).
 3. **Install dependencies and requirements**
    ```
    pip install -r requirements.txt
-   ```  
-4. **Run the script with the appropriate command and options as given below in the usage guide.**  
+   ```
+4. **Create a .env file with all API keys**
+   ```
+   GOOGLE_API_KEY=<your-google-api-key>
+   OPENAI_API_KEY=<your-openai-key>
+   ...
+   ```
+5. **Run the script with the appropriate command and options as given below in the usage guide.**  
 
 ---
 
